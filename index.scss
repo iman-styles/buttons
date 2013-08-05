@@ -123,11 +123,13 @@
 
   background: $primary;
   border: 1px solid rgba(#000, 0.07);
-  color: #fff;
+  color: #fff !important;
+  display: inline-block;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 30px !important;
   overflow: hidden;
   position: relative;
+  text-decoration: none !important;
   transition: background .25s ease-in-out;
   -moz-transition: background .25s ease-in-out;
   -webkit-transition: background .25s ease-in-out;
