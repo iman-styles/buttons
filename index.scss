@@ -126,7 +126,7 @@
   color: #fff !important;
   display: inline-block;
   font-size: 16px;
-  line-height: 30px !important;
+  line-height: 30px;
   overflow: hidden;
   position: relative;
   text-decoration: none !important;
@@ -239,7 +239,7 @@
 // @modifier
 .btn--large {
   font-size: 20px;
-  line-height: baseline(2.2);
+  line-height: baseline(2.2) !important;
   font-weight: normal;
   padding-left: spacing(1);
   padding-right: spacing(1);
