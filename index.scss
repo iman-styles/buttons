@@ -122,7 +122,7 @@
   $highlight: adjust-hue($primary, 4deg);
 
   background: $primary;
-  border: 1px solid rgba(#000, 0.07);
+  border: 1px solid rgba(#000, 0.2);
   color: #fff !important;
   display: inline-block;
   font-size: 16px;
@@ -130,6 +130,7 @@
   overflow: hidden;
   position: relative;
   text-decoration: none !important;
+  text-shadow: 0 1px 1px rgba(#000, 0.4);
   transition: background .25s ease-in-out;
   -moz-transition: background .25s ease-in-out;
   -webkit-transition: background .25s ease-in-out;
@@ -137,19 +138,18 @@
   &:active,
   &:hover {
     background: $highlight;
-    text-shadow: 0 -1px 0 rgba( 0, 0, 0, 0.08 );
   }
 
   &:after {
-    height: 2px;
-    display: block;
-    content: "";
-    width: 100%;
-    background: rgba(#000, 0.3);
-    left: 0;
-    right: 0;
+    background: rgba(#000, 0.2);
     bottom: -1px;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 0;
+    margin: 0 -1px;
     position: absolute;
+    right: 0;
   }
 }
 
@@ -182,29 +182,6 @@
   &:active,
   &:hover {
     background: $highlight;
-  }
-}
-
-// Inverse button style
-// @modifier
-.btn--inverse {
-  $shadow: darken($grey, 10%);
-  $highlight: lighten($grey, 15%);
-
-  @extend .btn--primary;
-  @include vertical-gradient($highlight, $grey, $grey);
-
-  color: white;
-  border: 1px solid $shadow;
-  text-shadow: 0 1px 1px rgba($shadow, 1);
-  box-shadow: 0 1px 0 rgba(#fff, 0.3) inset, 0 1px 0 rgba(#000, 0.2);
-
-  &:hover {
-    @include vertical-gradient( lighten($highlight, 10%), $grey, $highlight);
-  }
-
-  &:active {
-    @include vertical-gradient( lighten($highlight, 10%), $grey, $highlight);
   }
 }
 
@@ -241,8 +218,8 @@
   font-size: 20px;
   line-height: baseline(2.2) !important;
   font-weight: normal;
-  padding-left: spacing(1);
-  padding-right: spacing(1);
+  padding-left: spacing(2);
+  padding-right: spacing(2);
 }
 
 // Full-width button
@@ -254,25 +231,6 @@
   padding-right: 0;
   .lt-ie8 & {
     width: auto;
-  }
-}
-
-// Button displays as a flat panel
-.btn--panel {
-  text-align: left;
-  line-height: 45px;
-  padding: 0 $spacing-normal;
-  border-radius: 0;
-  text-decoration: none;
-  display: block;
-
-  .lt-ie8 & {
-    width: auto;
-  }
-
-  i {
-    margin-top: -3px;
-    margin-left: 0;
   }
 }
 
