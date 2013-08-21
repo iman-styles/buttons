@@ -1,30 +1,3 @@
-// The button classes are best applied to links, buttons, and submit inputs.
-// These components can be used in forms, as calls to action, or as part of the
-// general UI of the site/app.
-//
-// .btn--primary - Main call to action
-// .btn--secondary - Secondary call to action and for generic buttons
-// .btn--inverse - Inverse style button for reverse backgrounds or negative actions
-// .btn--transparent - Transparent button. When you need a button on a dark background with the dimensions of a button but with no background. Used for "Add" button in bundles in R&S
-// .btn--uppercase - Uppercase text
-// .btn--small - Smaller variation
-// .btn--medium - Slightly larger
-// .btn--large - Much larger
-// .btn--panel - Square panel button. Used for accordians and other UI elements
-// .btn--narrow - Narrow button style. Usually applied when styling buttons with icons
-// .btn--wide - For consistent call to action sizes
-// .btn--full - Full-width button. This is usually used in smaller columns where it makes sense to have the button span the full width of the column.
-// .btn--shadow - Adds a drop-shadow to the button. Used on dark backgrounds
-// .btn--info - Button used to show more information. Used with JS components to show and hide content.
-// .btn--bordered - Bordered buttons. Used to make a button more important without increasing it's size or colour
-//
-// Styleguide 1.1
-
-@function button-image-url($path) {
-  @return component-url('nib-styles-common', "local/buttons/images/#{$path}");
-}
-
-
 .btn {
   $primary: $green;
   $shadow: darken($primary, 5%);
@@ -130,7 +103,6 @@
   overflow: hidden;
   position: relative;
   text-decoration: none !important;
-  text-shadow: 0 1px 1px rgba(#000, 0.4);
   transition: background .25s ease-in-out;
   -moz-transition: background .25s ease-in-out;
   -webkit-transition: background .25s ease-in-out;
@@ -301,7 +273,6 @@
 .btn--bordered-light {
   box-shadow: 0 1px 0 rgba(#fff, 0.5) inset, 0 1px 0 rgba(#000, 0.1), 0 0 0 5px rgba(#fff, 0.1);
 }
-
 
 .form-text-trigger {
   line-height: 32px;
