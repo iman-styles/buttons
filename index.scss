@@ -309,3 +309,23 @@
     display: none;
   }
 }
+
+/*
+  Share button - Success Page
+ */
+.btn-share {
+  background: #eee;
+  color: #888;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 5px 8px;
+  text-decoration: none;
+}
+.btn-share:hover {
+  background: #fff;
+  color: #777;
+}
+.btn-share i {
+  margin-right: 5px;
+}
